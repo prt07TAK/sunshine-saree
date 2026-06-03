@@ -26,7 +26,7 @@ const productSchema = new mongoose.Schema(
     category: {
       type: String,
       required: [true, 'Product category is required'],
-      enum: ['Silk', 'Cotton', 'Banarasi', 'Chanderi', 'Georgette', 'Designer'],
+      enum: ['Silk', 'Cotton', 'Banarasi', 'Chanderi', 'Georgette', 'Designer', 'Chiffon', 'Traditional', 'Linen', 'Organza', 'Crepe', 'Synthetic', 'Net'],
     },
     fabric: {
       type: String,
@@ -39,7 +39,7 @@ const productSchema = new mongoose.Schema(
     occasion: [
       {
         type: String,
-        enum: ['Wedding', 'Festival', 'Casual', 'Party', 'Office', 'Traditional'],
+        enum: ['Wedding', 'Festival', 'Casual', 'Party', 'Office', 'Traditional', 'Cocktail'],
       },
     ],
     images: [
