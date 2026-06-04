@@ -1,0 +1,19 @@
+{
+  "name": "sunshine-saree-root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root project for sunshine-saree connecting frontend and backend",
+  "scripts": {
+    "install-all": "npm install",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
