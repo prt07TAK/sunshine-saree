@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.VITE_BACKEND_URL || 'https://sunshine-saree-backend.onrender.com/api',
 });
 
 // Add JWT token to requests
